@@ -3,6 +3,7 @@ rm -rf temp
 mkdir temp
 cd /sdcard/InsBin/
 cp url ins.sh ~/temp/
+printf "\n\n\n"
 echo -e "###### Enter your bin file name ####### \e[1;92m"
 read -r name
 clear
