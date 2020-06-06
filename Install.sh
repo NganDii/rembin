@@ -24,3 +24,6 @@ echo -e "\e[102mSUCCESSFUL \e[0m"
 echo ""
 echo "" 
 echo ""
+cd ~
+rm -rf temp
+
