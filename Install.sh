@@ -1,5 +1,5 @@
-if [ ! -e "~/rembin" ]; then
-cd ~/ && mkdir rembin && cd rembin
+if [ ! -e "~/binmaker" ]; then
+cd ~/ && mkdir binmaker && cd binmaker
 fi
 echo -e "###### Enter your bin file name ####### \e[1;92m"
 read -r name
