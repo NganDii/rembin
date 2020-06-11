@@ -1,3 +1,8 @@
+echo "Choose your device: "
+echo "1.  Phone"
+echo "2.  Computer"
+read -r option
+if [ $option == 1 ]; then
 cd ~
 rm -rf temp
 mkdir temp
@@ -26,4 +31,9 @@ echo ""
 echo ""
 cd ~
 rm -rf temp
-
+elif [ $option == 2 ]; then
+echo "Computer"
+else
+echo "Invalid choice"
+exit 0
+fi
