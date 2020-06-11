@@ -9,9 +9,9 @@ echo "Choose your device"
 printf "\n\n1. Phone\n2. Computer\n\n"
 read -r option
 if [ $option == "1" ]; then
-cp -f url /data/data/com.termux/files/usr/bin/$name && chmod +x /data/data/com.termux/files/usr/bin/$name
+cp -f ~/url /data/data/com.termux/files/usr/bin/$name && chmod +x /data/data/com.termux/files/usr/bin/$name
 elif [ $option == "2" ]; then
-sudo cp -f url /usr/bin/$name && sudo chmod +x /usr/bin/$name
+sudo cp -f ~/url /usr/bin/$name && sudo chmod +x /usr/bin/$name
 else
 echo "Invalid Choice"
 exit 1
@@ -20,5 +20,5 @@ echo "SUCCESSFUL"
 echo ""
 echo "" 
 echo ""
-rm -rf url
+rm -rf ~/url
 cd ~
