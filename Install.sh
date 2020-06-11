@@ -33,6 +33,21 @@ cd ~
 rm -rf temp
 elif [ $option == 2 ]; then
 echo "Computer"
+cd ~/ && mkdir rembin && cd rembin
+echo -e "###### Enter your bin file name ####### \e[1;92m"
+read -r name
+clear
+printf "\n\n\Enter your codes for bin file(Ctrl+x, y and hit enter to save): "
+nano url
+cat <<EOF>bin.sh
+cp -f url /usr/bin/$name && chmod +x /usr/bin/$name
+EOF
+bash bin.sh
+echo -e "\e[102mSUCCESSFUL \e[0m"
+echo ""
+echo "" 
+echo ""
+cd ~
 else
 echo "Invalid choice"
 exit 0
