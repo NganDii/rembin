@@ -14,6 +14,7 @@ elif [ $option == 2 ]; then
 sudo cp -f url /usr/bin/$name && sudo chmod +x /usr/bin/$name
 else
 echo "Invalid Choice"
+exit 1
 fi
 echo "SUCCESSFUL"
 echo ""
