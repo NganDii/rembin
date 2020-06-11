@@ -4,7 +4,7 @@ clear
 printf "\n\nEnter your codes for bin file(Ctrl+x, y and hit enter to save):\n\n "
 echo "Press Enter to proceed"
 read x
-nano url
+nano ~/url
 clear
 echo "Choose your device"
 printf "\n\n1. Phone\n2. Computer\n\n"
