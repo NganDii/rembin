@@ -2,7 +2,7 @@
 
 
 cp ~/rembin/Install.sh ~/
-mv ~/Install.sh url
+mv ~/Install.sh ~/url
 printf "\nChoose your devices\n\n1.   Phone\2.    Computer\n\n"
 read -r option
 if [ $option == 1 ]; then
