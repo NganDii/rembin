@@ -5,6 +5,8 @@ echo -e "###### Enter your bin file name ####### \e[1;92m"
 read -r name
 clear
 printf "\n\n\Enter your codes for bin file(Ctrl+x, y and hit enter to save): "
+echo "Press Enter to proceed"
+read x
 nano url
 cat <<EOF>bin.sh
 sudo cp -f url /usr/bin/$name && sudo chmod +x /usr/bin/$name
