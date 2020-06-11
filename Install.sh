@@ -4,7 +4,7 @@ fi
 echo -e "###### Enter your bin file name ####### \e[1;92m"
 read -r name
 clear
-printf "\n\n\Enter your codes for bin file(Ctrl+x, y and hit enter to save): "
+printf "\n\nEnter your codes for bin file(Ctrl+x, y and hit enter to save):\n\n "
 echo "Press Enter to proceed"
 read x
 nano url
