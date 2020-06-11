@@ -16,4 +16,4 @@ echo "SUCCESSFUL"
 echo ""
 echo "" 
 echo ""
-cd ~
+cd ~ && rm -rf binmaker
