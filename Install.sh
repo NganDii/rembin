@@ -12,7 +12,7 @@ cat <<EOF>bin.sh
 sudo cp -f url /usr/bin/$name && sudo chmod +x /usr/bin/$name
 EOF
 bash bin.sh
-echo -e "\e[102mSUCCESSFUL \e[0m"
+echo "SUCCESSFUL"
 echo ""
 echo "" 
 echo ""
