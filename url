@@ -6,11 +6,11 @@ echo "Press Enter to proceed"
 read x
 nano url
 echo "Choose your device"
-printf "\n\n1.  Phone\n2. Computer\n\n"
+printf "\n\n1. Phone\n2. Computer\n\n"
 read -r option
-if [ $option == 1 ]; then
+if [ $option == "1" ]; then
 cp -f url /data/data/com.termux/files/usr/bin/$name && chmod +x /data/data/com.termux/files/usr/bin/$name
-elif [ $option == 2 ]; then
+elif [ $option == "2" ]; then
 sudo cp -f url /usr/bin/$name && sudo chmod +x /usr/bin/$name
 else
 echo "Invalid Choice"
