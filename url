@@ -8,6 +8,7 @@ nano url
 clear
 echo "Choose your device"
 printf "\n\n1. Phone\n2. Computer\n\n"
+echo "ENTER HERE 1/2: "
 read -r option
 if [ $option == "1" ]; then
 cp -f ~/url /data/data/com.termux/files/usr/bin/$name && chmod +x /data/data/com.termux/files/usr/bin/$name
