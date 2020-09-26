@@ -1,26 +1,8 @@
-echo -e "###### Enter your bin file name ####### \e[1;92m"
-read -r name
-clear
-printf "\n\nEnter your codes for bin file(Ctrl+x, y and hit enter to save):\n\n "
-echo "Press Enter to proceed"
-read x
-nano ~/url
-clear
-echo "Choose your device"
-printf "\n\n1. Phone\n2. Computer\n\n"
-echo "ENTER HERE 1/2: "
+printf "\nChoose your devices\n\n1.   Phone\n2.    Computer\n\n"
 read -r option
 if [ $option == "1" ]; then
-cp -f ~/url /data/data/com.termux/files/usr/bin/$name && chmod +x /data/data/com.termux/files/usr/bin/$name
+cp -f ~/rembin/url /data/data/com.termux/files/usr/bin/rembin && chmod +x /data/data/com.termux/files/usr/bin/rembin
 elif [ $option == "2" ]; then
-sudo cp -f ~/url /usr/bin/$name && sudo chmod +x /usr/bin/$name
+sudo cp -f ~/rembin/url /usr/bin/rembin && sudo chmod +x /usr/bin/rembin
 else
-echo "Invalid Choice"
-exit 1
-fi
-echo "SUCCESSFUL"
-echo ""
-echo "" 
-echo ""
-rm -rf ~/url
-cd ~
+echo "Invalid Option"
